@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="my.ship" xmlns:tns="my.ship" elementFormDefault="qualified">
+
+
+	<xs:complexType name="shiporderType">
+
+
+		<xs:sequence>
+			<!-- definition of simple elements -->
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="address" type="xs:string" />
+
+			<!-- definition of attributes -->
+			<xs:attribute name="orderid" type="xs:string"  />
+
+			<!-- definition of complex elements -->
+			<xs:element name="item">
+				<xs:complexType>
+					<xs:element ref="name" />
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="shipto">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="name" />
+						<xs:element ref="address" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+
+		</xs:sequence>
+
+	</xs:complexType>
+
+
+	<xs:element name="shiporder" type="my.ship:shiporderType" />
+
+
+</xs:schema>

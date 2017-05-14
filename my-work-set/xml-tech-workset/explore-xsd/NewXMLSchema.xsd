@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.example.org/sample" targetNamespace="http://www.example.org/sample"
+	elementFormDefault="qualified">
+
+	<xsd:element name="note" type="tns:notetype" />
+
+	<xsd:complexType name="notetype">
+		<xsd:sequence>
+			<xsd:element name="to" type="xsd:string" />
+			<xsd:element name="from" type="xsd:string" />
+			<xsd:element name="heading" type="xsd:string" />
+			<xsd:element name="body" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

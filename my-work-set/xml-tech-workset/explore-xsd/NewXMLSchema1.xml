@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:PurchaseOrder1 xmlns:tns="http://tempuri.org/PurchaseOrderSchema.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://tempuri.org/PurchaseOrderSchema.xsd NewXMLSchema1.xsd ">tns:PurchaseOrder1</tns:PurchaseOrder1>
+
+<tns:PurchaseOrder xmlns:tns="http://tempuri.org/PurchaseOrderSchema.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://tempuri.org/PurchaseOrderSchema.xsd NewXMLSchema1.xsd ">
+	tns:PurchaseOrder1
+</tns:PurchaseOrder>
+	

@@ -1,0 +1,10 @@
+
+#To create a project from archetype from cmd prompt
+mvn archetype:generate -DgroupId=com.inc -DartifactId=my-spring-jwsstd1 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.inc -DartifactId=my-spring-jwsstd1 
+
+>mvn archetype:generate -DgroupId=org.ck.edu -DartifactId=jws-spring-servlet-1
+
+
+copied the mvn.bat-->mvn.cmd to run
+>mvn archetype:create-from-project

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+
+<head>
+<title>my-spring-jwsstd1_README</title>
+<style>
+div.refHeadingSec {
+	border: 1px dotted 000;
+	background-color: f5e1b6;
+	padding: 8px 8px 8px 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+	font-family: MS Reference Sans Serif;
+	font-size: 12px;
+}
+
+div.subHeadingSec {
+	border: 1px dotted 000;
+	background-color: #D3D3D3;
+	padding: 8px 8px 8px 8px;
+	margin-left: 10px;
+	margin-right: 10px; //
+	font-weight: bold;
+	font-family: MS Reference Sans Serif;
+	font-size: 12px;
+}
+
+p { //
+	border: 1px solid powderblue;
+	margin-left: 10px;
+}
+
+body {
+	font-family: MS Reference Sans Serif;
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+	<div class='refHeadingSec'>Project-Desc</div>
+	<p>This is simple project using jws and spring. Setup is sample for
+		exporting standalone service(webservice)</p>
+	<div class='subHeadingSec'>Project-Impl</div>
+	<p>
+
+		The webservice is spring maintained bean exposed using spring without
+		servlet at the back. Running the main
+		client(MyStandaloneWSServer.java) will allow to access the webservice.
+		<br> The webservice itself is spring maintained bean and exposed
+			using its default settings localhost,baseport (for instance). The
+			webservice is delegating call to spring managed bean. (@Webservice is
+			given to the spring SEI( i.e.)service endpoint interface.) 
+		<br>
+		<b>@Service</b> annotation is used by the spring to load the
+		service(s).</b> <br>
+		<b> @Webserice</b> annotation is used to configure for the spring
+		impl. In this case as we are exposing the service endpoints with the
+		spring inbuilt SimpleJaxWsServiceExporter. It will register endpoint
+		with the internal JAX-WS runtime server and publishes for us.</b>
+
+	</p>
+
+	<div class='subHeadingSec'>To-do</div>
+	<ol>
+		<li></li>
+	</ol>
+
+	<div class='subHeadingSec'>Reading-Material</div>
+	<ol>
+		<li>Spring reference document - 4.4.3 &gt; Remoting and web
+			services using Spring</li>
+	</ol>
+
+	<div class='subHeadingSec'>Testing:Browser</div>
+	<ol>
+		<li>http://localhost:8080/AccountService?wsdl</li>
+	</ol>
+
+	<div class='subHeadingSec'>Online-Ref</div>
+	<ol>
+		<li>Spring reference document - 4.4.3 &gt; Exporting standalone
+			web services using JAX-WS</li>
+		<!-- <li>Spring reference document - 4.4.3 &gt;Accessing web services using JAX-WS</li>-->
+	</ol>
+
+	<div class='subHeadingSec'>Hands-On-Observations</div>
+	<ol>
+		<li><b> @Webserice</b> annotation is used to configure general
+			interface (AccountService). Otherwise standalone client was not able
+			to create proxy.</li>
+	</ol>
+
+	<div class='subHeadingSec'>Mistakes-Made</div>
+	<ol>
+		<li></li>
+	</ol>
+
+
+	<div class='subHeadingSec'>More-To-Learn</div>
+	<ol>
+		<li></li>
+	</ol>
+	<div class='subHeadingSec'>Prerequisites</div>
+	<ul>
+		<li>maven</li>
+		<li>jdk1.6</li>
+	</ul>
+
+	<div class='subHeadingSec'>Project's-Foundation</div>
+	<br>
+	<div class='subHeadingSec'>Similar-Project(s)</div>
+	<br>
+	<div class='subHeadingSec'>Steps-to-Run</div>
+	<br>
+	<div class='subHeadingSec'>Known-issues</div>
+	<ul>
+		<li></li>
+	</ul>
+</body>
+</html>

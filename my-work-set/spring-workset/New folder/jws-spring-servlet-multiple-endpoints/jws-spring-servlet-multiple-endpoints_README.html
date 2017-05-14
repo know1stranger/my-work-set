@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+
+<head>
+<style>
+div.refHeadingSec {
+	border: 1px dotted 000;
+	background-color: f5e1b6;
+	padding: 8px 8px 8px 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+	font-family: MS Reference Sans Serif;
+	font-size: 12px;
+}
+
+div.subHeadingSec {
+	border: 1px dotted 000;
+	background-color: #D3D3D3;
+	padding: 8px 8px 8px 8px;
+	margin-left: 10px;
+	margin-right: 10px; //
+	font-weight: bold;
+	font-family: MS Reference Sans Serif;
+	font-size: 12px;
+}
+
+p { //
+	border: 1px solid powderblue;
+	margin-left: 10px;
+}
+
+body {
+	font-family: MS Reference Sans Serif;
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+	<div class='refHeadingSec'>Project-Desc</div>
+	<p>This project is using jws and spring for supporting multiple
+		endpoints. Setup is sample for exporting servlet based
+		service(webservice) in non JEE 5 Env. &nbsp;(According to reading doc
+		this setup it will work in tomcat server as it will have the JWS
+		runtime.)</p>
+	<div class='subHeadingSec'>Project-Impl</div>
+	<p>
+		The webservice is spring maintained bean exposed using WSSpringServlet
+		(RI from JAX-WS). Webservice is delegating call to other spring
+		managed bean pojo service.<br> Unlike traditional config this
+			setup will only need one servlet in the web.xml to support multiple
+			enpoint urls 
+	</p>
+	
+	<div class='subHeadingSec'>To-do</div>
+	<ol>
+		<li></li>
+	</ol>
+	
+	<div class='subHeadingSec'>Reading-Material</div>
+	<ol>
+		<li>Spring reference document - 4.4.3 &gt; Remoting and web
+			services using Spring &gt; Exporting web services using the JAX-WS RI
+			Spring support.</li>
+	</ol>
+
+	<div class='subHeadingSec'>Testing:Browser</div>
+	<ol>
+		<li>http://localhost:8080/jws-spring-servlet-multiple-endpoints/test1</li>
+		<li>http://localhost:8080/jws-spring-servlet-multiple-endpoints/test2</li>
+	</ol>
+
+	<div class='subHeadingSec'>Online-Ref</div>
+	<ol>
+		<li>Spring reference document - 4.4.3</li>
+		<li>https://examples.javacodegeeks.com/enterprise-java/jws/jax-ws-spring-integration-example/</li>
+		<li>https://jax-ws-commons.java.net/spring/</li>
+	</ol>
+	
+	<div class='subHeadingSec'>Hands-On-Observations</div>
+	<ol>
+		<li></li>
+	</ol>
+
+	<div class='subHeadingSec'>Mistakes-Made</div>
+	<ol>
+		<li>In Web-Service impl class method(s) that are not part of the
+			actual service should be properly annotated to exclude. Otherwise,
+			ended up with error jaxb error complaining about the intf.</li>
+	</ol>
+
+
+	<div class='subHeadingSec'>More-To-Learn</div>
+	<ol>
+		<li>xbean-spring is the lib to usage for custom specification
+			(also called as xml authoring).</li>
+	</ol>
+
+	<div class='subHeadingSec'>Prerequisites</div>
+	<ul>
+		<li>Tomcat v7.0 Server</li>
+		<li>maven</li>
+		<li>jdk1.6</li>
+	</ul>
+
+	<div class='subHeadingSec'>Project's-Foundation</div>
+	<br>
+	<div class='subHeadingSec'>Similar-Project(s)</div>
+	<br>
+	<div class='subHeadingSec'>Steps-to-Run</div>
+	<br>
+	<div class='subHeadingSec'>Known-issues</div>
+	<ul>
+		<li></li>
+	</ul>
+</body>
+</html>
